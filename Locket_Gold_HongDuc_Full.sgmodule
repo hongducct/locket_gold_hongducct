@@ -1,0 +1,20 @@
+#!url=https://raw.githubusercontent.com/hongducct/locket_gold_hongducct/main/Locket_Gold_HongDuc_Full.sgmodule
+#!name=Locket-HongDuc_Gold_Full
+#!desc=Crack + Fake IP By Hong Duc
+
+[General]
+user-agent = Locket/1.0.0 (iPhone; iOS 18.1.1; Scale/3.00)
+
+[Script]
+# ~ By Hong Duc
+# ~ Fix cho Shadowrocket & Surge
+revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/v\d+\/subscribers\/.*, script-path=https://raw.githubusercontent.com/hongducct/locket_gold_hongducct/main/Locket_Gold_HongDuc_Fix.js, requires-body=true, max-size=-1, timeout=120
+
+deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/hongducct/locket_gold_hongducct/main/deleteHeader.js, timeout=120
+
+fakeIP = type=http-request, pattern=^https:\/\/api\.locket-app\.com\/.*, script-path=https://raw.githubusercontent.com/hongducct/locket_gold_hongducct/main/fakeIP.js, timeout=120
+
+[MITM]
+hostname = api.revenuecat.com, api.locket-app.com, raw.githubusercontent.com
+
+# ~ Hồng Đức - Updated April 2025
